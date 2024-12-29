@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Existing Colors -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="purple_500">#6200EE</color>
+    <!-- Add more custom colors if needed -->
+</resources>

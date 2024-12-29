@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="330dp"
+    android:layout_height="210dp"
+    android:orientation="vertical"
+    android:background="@drawable/card_background"
+    android:padding="16dp"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/cardImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/aadhar" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Card Title"
+            android:textColor="@android:color/black"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="123dp">
+
+        <TextView
+            android:id="@+id/descreption"
+            android:layout_width="273dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Unique Identification Authority of India(UIDAI)"
+            android:textFontWeight="-100"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/cardImageCopy"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="192dp"
+            android:layout_marginEnd="16dp"
+            android:alpha="0.4"
+            android:src="@drawable/aadhar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

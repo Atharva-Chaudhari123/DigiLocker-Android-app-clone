@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/purple_500" /> <!-- Background color of the bubble -->
+
+    <!-- Individual corner radii -->
+    <corners
+        android:topLeftRadius="32dp"
+        android:topRightRadius="32dp"
+        android:bottomLeftRadius="100dp"
+        android:bottomRightRadius="200dp" /> <!-- Bottom-right corner is more curved -->
+
+    <padding
+        android:left="16dp"
+        android:top="16dp"
+        android:right="16dp"
+        android:bottom="16dp" />
+
+    <size
+        android:height="180dp" /> <!-- Adjust height as needed -->
+</shape>
