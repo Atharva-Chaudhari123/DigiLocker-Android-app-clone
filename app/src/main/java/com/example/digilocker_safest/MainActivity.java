@@ -9,6 +9,7 @@ import android.os.Bundle;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.StringJoiner;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,11 +26,12 @@ public class MainActivity extends AppCompatActivity {
 
         // Example data for cards
         List<String> cardTitles = Arrays.asList("Aadhaar Card","Covid Vaccine", "Driving License", "PAN Card");
+//        List<Integer> cardID = Arrays.asList(R.id.aadhar ,   ) ;
         List<String> cardDescreptions = Arrays.asList("Unique Identification Authority of India(UIDAI)", "Ministry of Health & Welfare", "Ministry of Road transport and Highway", "Income Tax Department");
         List<Integer> cardImages = Arrays.asList(R.drawable.aadhar,R.drawable.ic_tigers, R.drawable.ic_tigers, R.drawable.ic_pancard);
 
         // Set Adapter
-        CardAdapter adapter = new CardAdapter(cardTitles, cardDescreptions, cardImages);
+        CardAdapter adapter = new CardAdapter(cardTitles, cardDescreptions, cardImages, cardID);
         recyclerView.setAdapter(adapter);
 
         // Add SnapHelper for snapping effect

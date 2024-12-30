@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -16,10 +17,13 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
     private List<String> cardTitles, cardDescreptions;
     private List<Integer> cardImages; // List of image resource IDs
 
-    public CardAdapter(List<String> cardTitles, List<String>cardDescreptions ,List<Integer> cardImages) {
+    private List<Integer> cardID ;
+
+    public CardAdapter(List<String> cardTitles, List<String>cardDescreptions ,List<Integer> cardImages, List<Integer> id) {
         this.cardTitles = cardTitles;
         this.cardImages = cardImages;
         this.cardDescreptions = cardDescreptions ;
+        this.cardID = id ;
     }
 
     @NonNull
@@ -36,6 +40,8 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
         holder.textViewDescreption.setText(cardDescreptions.get(position));
         holder.cardImage.setImageResource(cardImages.get(position)); // Set the image dynamically
         holder.cardImage2.setImageResource(cardImages.get(position));
+        holder.card.setId(cardID.get(position));
+
     }
 
     @Override
@@ -47,8 +53,11 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
         TextView textViewTitle, textViewDescreption;
         ImageView cardImage, cardImage2;
 
+        LinearLayout card ;
+
         public CardViewHolder(@NonNull View itemView) {
             super(itemView);
+            card = itemView.findViewById(R.id.cardtype) ;
             textViewTitle = itemView.findViewById(R.id.textViewTitle);
             textViewDescreption = itemView.findViewById(R.id.descreption) ;
             cardImage = itemView.findViewById(R.id.cardImage); // Reference to the ImageView
