@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <!-- Header Layout -->
     <LinearLayout
         android:id="@+id/header_layout"
@@ -44,6 +45,7 @@
             android:textColor="@android:color/white"
             android:textSize="30sp"
             android:textStyle="bold" />
+
     </LinearLayout>
     <!-- Bubble shape-->
     <!-- Welcome Text -->
@@ -118,5 +120,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_nav_menu" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,21 +24,24 @@
 
         <!-- License Details -->
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
             android:layout_width="349dp"
             android:layout_height="115dp"
-            android:layout_gravity="center"
-            android:orientation="horizontal">
+            android:layout_gravity="center">
 
             <ImageView
-                android:layout_width="99dp"
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
                 android:layout_height="110dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="110dp"
-                android:src="@drawable/ic_tigers" />
+                android:src="@drawable/ic_tigers"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
 
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <!-- Name and Details -->
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -83,6 +86,7 @@
             android:layout_height="94dp">
 
             <TextView
+                android:id="@+id/textView3"
                 android:layout_width="207dp"
                 android:layout_height="27dp"
                 android:layout_marginTop="6dp"
@@ -91,6 +95,8 @@
                 android:textSize="13sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -117,6 +123,8 @@
                 android:textSize="13sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
@@ -130,14 +138,18 @@
                 android:textSize="13sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="275dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="353dp">
 
             <LinearLayout
                 android:layout_width="247dp"

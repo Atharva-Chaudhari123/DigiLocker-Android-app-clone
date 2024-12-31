@@ -1,11 +1,14 @@
 package com.example.digilocker_safest;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -19,11 +22,14 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
 
     private List<Integer> cardID ;
 
-    public CardAdapter(List<String> cardTitles, List<String>cardDescreptions ,List<Integer> cardImages, List<Integer> id) {
+    Context context ;
+
+    public CardAdapter(Context context, List<String> cardTitles, List<String>cardDescreptions , List<Integer> cardImages, List<Integer> id) {
         this.cardTitles = cardTitles;
         this.cardImages = cardImages;
         this.cardDescreptions = cardDescreptions ;
         this.cardID = id ;
+        this.context = context ;
     }
 
     @NonNull
@@ -41,6 +47,27 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
         holder.cardImage.setImageResource(cardImages.get(position)); // Set the image dynamically
         holder.cardImage2.setImageResource(cardImages.get(position));
         holder.card.setId(cardID.get(position));
+
+        Toast.makeText(context, "called", Toast.LENGTH_SHORT).show();
+        holder.card.setOnClickListener(v -> {
+            Toast.makeText(context, "clicked" + holder.card.getId(), Toast.LENGTH_SHORT).show();
+
+            switch (holder.card.getId()){
+                case 1 :
+                    //aadhar
+                    break ;
+                case 2 :
+                    // covid
+                    break ;
+                case 3 :
+                    Intent i = new Intent(context, DrivingLicenseActivityy.class);
+                    context.startActivity(i);
+                case 4 :
+                    //pan card
+                    break ;
+            }
+
+        });
 
     }
 

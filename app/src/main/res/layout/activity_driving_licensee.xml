@@ -1,0 +1,266 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:elevation="4dp"
+        android:clipToPadding="false"
+        >
+
+        <!-- Government Logo -->
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="99dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="Government Logo"
+            android:src="@drawable/ic_tigers" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#C6C4C4"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UNION OF INDIA DRIVING LICENSE"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:textColor="#000000" />
+
+            <!-- Issuing Authority -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Issuing Authority: DY RTO, NANDURBAR"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_gravity="center"
+                android:textColor="#757575" />
+
+        </LinearLayout>
+
+        <View
+             android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/horizontal_line" />
+
+
+
+        <!-- Details Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Authorization to Drive: LMV, MCWG"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Date of Issue: 01-10-2024"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:gravity="end" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="License No.: MH39 20400008041"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Valid Till: 18-08-2045"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:gravity="end" />
+        </LinearLayout>
+
+        <!-- Profile Section -->
+
+        <!-- QR Code and Signature -->
+        <LinearLayout
+            android:layout_width="341dp"
+            android:layout_height="111dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <!-- Details -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Name  : Atharva Suresh Chaudhari"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="DOB     : 29-10-2004"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Blood Group: A+"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="S/W/D : Suresh Chaudhari"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+
+                <!-- Other Details -->
+            </LinearLayout>
+
+
+            <!-- Profile Image -->
+            <ImageView
+                android:layout_width="104dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:contentDescription="Profile Picture"
+                android:scaleType="centerCrop"
+                android:src="@drawable/atharva" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address : Parvati Nagar, Dudhale Shivar , Nandurbar, MH 425412 "
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/horizontal_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/qr"
+                android:contentDescription="QR Code" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:src="@drawable/verified"
+                android:contentDescription="Verified Badge"
+                android:layout_marginStart="16dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="34dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/silver_border"
+                    android:text="Digitally Signed on Date: 1-10-24  18:11:14IST"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="31dp"
+                    android:layout_marginBottom="34dp"
+                    android:src="@drawable/green_tick"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
